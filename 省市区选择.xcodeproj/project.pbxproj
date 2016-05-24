@@ -13,6 +13,9 @@
 		010CB6A91CEF09D200FA7861 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 010CB6A71CEF09D200FA7861 /* Main.storyboard */; };
 		010CB6AB1CEF09D200FA7861 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 010CB6AA1CEF09D200FA7861 /* Assets.xcassets */; };
 		010CB6AE1CEF09D200FA7861 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 010CB6AC1CEF09D200FA7861 /* LaunchScreen.storyboard */; };
+		010CB6B71CEF0BA200FA7861 /* SZXSelectProvinceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 010CB6B61CEF0BA200FA7861 /* SZXSelectProvinceView.m */; };
+		010CB6B91CEF0BE200FA7861 /* SZXSelectProvinceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 010CB6B81CEF0BE200FA7861 /* SZXSelectProvinceView.xib */; };
+		016E48741CEF184C00735201 /* Province.plist in Resources */ = {isa = PBXBuildFile; fileRef = 016E48731CEF184C00735201 /* Province.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,10 @@
 		010CB6AA1CEF09D200FA7861 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		010CB6AD1CEF09D200FA7861 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		010CB6AF1CEF09D200FA7861 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		010CB6B51CEF0BA200FA7861 /* SZXSelectProvinceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZXSelectProvinceView.h; sourceTree = "<group>"; };
+		010CB6B61CEF0BA200FA7861 /* SZXSelectProvinceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZXSelectProvinceView.m; sourceTree = "<group>"; };
+		010CB6B81CEF0BE200FA7861 /* SZXSelectProvinceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SZXSelectProvinceView.xib; sourceTree = "<group>"; };
+		016E48731CEF184C00735201 /* Province.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Province.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +69,13 @@
 				010CB6A21CEF09D200FA7861 /* AppDelegate.m */,
 				010CB6A41CEF09D200FA7861 /* ViewController.h */,
 				010CB6A51CEF09D200FA7861 /* ViewController.m */,
+				010CB6B51CEF0BA200FA7861 /* SZXSelectProvinceView.h */,
+				010CB6B61CEF0BA200FA7861 /* SZXSelectProvinceView.m */,
+				010CB6B81CEF0BE200FA7861 /* SZXSelectProvinceView.xib */,
 				010CB6A71CEF09D200FA7861 /* Main.storyboard */,
 				010CB6AA1CEF09D200FA7861 /* Assets.xcassets */,
 				010CB6AC1CEF09D200FA7861 /* LaunchScreen.storyboard */,
+				016E48731CEF184C00735201 /* Province.plist */,
 				010CB6AF1CEF09D200FA7861 /* Info.plist */,
 				010CB69E1CEF09D100FA7861 /* Supporting Files */,
 			);
@@ -136,9 +147,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				010CB6B91CEF0BE200FA7861 /* SZXSelectProvinceView.xib in Resources */,
 				010CB6AE1CEF09D200FA7861 /* LaunchScreen.storyboard in Resources */,
 				010CB6AB1CEF09D200FA7861 /* Assets.xcassets in Resources */,
 				010CB6A91CEF09D200FA7861 /* Main.storyboard in Resources */,
+				016E48741CEF184C00735201 /* Province.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				010CB6B71CEF0BA200FA7861 /* SZXSelectProvinceView.m in Sources */,
 				010CB6A61CEF09D200FA7861 /* ViewController.m in Sources */,
 				010CB6A31CEF09D200FA7861 /* AppDelegate.m in Sources */,
 				010CB6A01CEF09D100FA7861 /* main.m in Sources */,
@@ -264,6 +278,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "省市区选择/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "vshoutao.com.-----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -275,6 +290,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "省市区选择/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "vshoutao.com.-----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -300,6 +316,7 @@
 				010CB6B41CEF09D200FA7861 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
